@@ -5,7 +5,6 @@ function GeradorCracha() {
   const [nome, setNome] = useState("");
   const [cargo, setCargo] = useState("");
 
-  // 🔥 DESAFIO já feito: muda cor se for Diretor
   const estiloRodape = {
     backgroundColor: cargo.toLowerCase() === "diretor" ? "gold" : "#27ae60"
   };
@@ -13,7 +12,6 @@ function GeradorCracha() {
   return (
     <div className={styles.painel}>
       
-      {/* Formulário */}
       <div className={styles.formulario}>
         <h2>Configurações</h2>
         
@@ -38,7 +36,6 @@ function GeradorCracha() {
         </button>
       </div>
 
-      {/* Crachá */}
       <div>
         <div className={styles.cracha}>
           
